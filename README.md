@@ -7,19 +7,32 @@ In the IBM Watson Studio, there is a large collaborative community ecosystem of 
 ## Objectives of Project
 
 
-int this project the objective is to analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles it is believed they will like. Here is an example of what the dashboard could look like displaying articles on the IBM Watson Platform.
+In this project the objective is to analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles it is believed they will like. Here is an example of what the dashboard could look like displaying articles on the IBM Watson Platform.
 
-screen-shot-2018-09-17-at-3.40.30-pm.png
 
 ## Recommended initial Setup & Installations
 
+They are quite some libraries used across the project, all referenced in the requirements.txt file. For a step by step setup ou can follow those 4 steps:
+
+Create a virtual environment python -m venv .venv
+
+Set Execution Policy Settings (optional only if next step leads to error) Set-ExecutionPolicy Unrestricted -Scope Process or Set-ExecutionPolicy RemoteSigned
+
+Activate venv ..venv\Scripts\activate
+
+Install required librairies pip install -r requirements.txt pip freeze > requirements.txt (to update requirements file with all installed packages)
 
 ## How to run the project
 
+The whole conent of the project is held in a single notebook: Recommendations_with_IBM.ipynb.
+
+Also for a simple read through an html version of the notebook is available : Recommendations_with_IBM.html
 
 ## Files Descriptions
 
-
+- Recommendations_with_IBM.ipynb : The main notebook
+- Recommendations_with_IBM.html : A HTML easy to read version of the project tasks
+- Data folder, with articles in articles_community.csv & users activities in user-item-interactions.csv
 
 ## High Level Project Steps
 
